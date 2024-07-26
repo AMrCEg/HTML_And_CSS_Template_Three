@@ -1,4 +1,4 @@
-let langElement = document.querySelector(".lang");
+let languageElement = document.querySelector(".language");
 let logoElement = document.querySelector(".logo");
 let landingHeader = document.querySelector(".landing .container .text h1");
 let landingParagraph = document.querySelector(".landing .container .text p");
@@ -6,7 +6,7 @@ let articlesLink = document.querySelector(`.main-menu a[href="#articles"] `);
 let galleryLink = document.querySelector(`.main-menu a[href="#gallery"] `);
 let featuresLink = document.querySelector(`.main-menu a[href="#features"] `);
 let OtherLink = document.querySelector(`.main-menu a[href="#"] `);
-console.log(OtherLink);
+console.log(languageElement);
 {
   /* <ul class="main-menu">
 
@@ -84,15 +84,15 @@ console.log(OtherLink);
 }
 
 /* Toggle between arabic and english */
-let lang = "en";
+let language = "en";
 function addRemoveArabicCssFile() {
   // Get HTML head element
   let head = document.getElementsByTagName("HEAD")[0];
-  if (lang === "en") {
-    // Change innerHTML of langElement to english
-    langElement.innerHTML = "EN";
-    // Change lang to arabic
-    lang = "ar";
+  if (language === "en") {
+    // Change innerHTML of languageElement to english
+    languageElement.innerHTML = "EN";
+    // Change language to arabic
+    language = "ar";
     // Create new link Element
     let link = document.createElement("link");
     // set the attributes for link element
@@ -103,11 +103,11 @@ function addRemoveArabicCssFile() {
 
     // Trigger change Page Content function
     changePageContent();
-  } else if (lang === "ar") {
-    // Change innerHTML of langElement to arabic
-    langElement.innerHTML = "ع";
-    // Change lang to arabic
-    lang = "en";
+  } else if (language === "ar") {
+    // Change innerHTML of languageElement to arabic
+    languageElement.innerHTML = "ع";
+    // Change language to arabic
+    language = "en";
     // remove css link element from HTML head
     head.lastElementChild.remove();
 
@@ -162,4 +162,4 @@ function restorePageContent() {
 }
 
 // Toggle between arabic and english
-langElement.addEventListener("click", addRemoveArabicCssFile);
+languageElement.addEventListener("click", addRemoveArabicCssFile);

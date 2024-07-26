@@ -544,6 +544,10 @@ https://codepen.io/collection/nNmwgP
   margin-right: 10px;
 }
 
+.language {
+  cursor: pointer;
+}
+
 /*End Header Rules*/
 
 /*Start Landing Rules*/
@@ -1752,7 +1756,6 @@ https://codepen.io/collection/nNmwgP
   background-color: var(--main-color);
   color: white;
   font-weight: bold;
-  /* padding: 10px 35px 10px 10px; */
   font-size: 18px;
   position: absolute;
   right: 20px;
@@ -1854,9 +1857,6 @@ https://codepen.io/collection/nNmwgP
 .top-videos {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-}
-
-.top-videos .container {
 }
 
 .top-videos .container .holder {
