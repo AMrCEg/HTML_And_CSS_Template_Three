@@ -1,0 +1,256 @@
+body {
+  direction: rtl;
+}
+
+/*Start Header Rules*/
+
+.header .container .logo::before {
+  top: 2%;
+  left: 25%;
+}
+
+/*End codePen*/
+
+.header .container .main-menu > li > a::before {
+  right: -100%;
+
+  -o-transition: var(--main-transition);
+}
+
+.header .container .main-menu > li > a:hover::before {
+  right: 0;
+}
+
+/* mega-menu */
+
+.header .container .main-menu > li > .mega-menu {
+  right: 0;
+}
+
+.header .container .main-menu > li > .mega-menu .column li::before {
+  right: 0;
+}
+
+.header .container .main-menu > li > .mega-menu .column li a i {
+  margin-left: 10px;
+}
+
+/*End Header Rules*/
+
+/*Start Landing Rules*/
+
+.landing::before {
+  left: 0;
+  transform: skewY(-6deg);
+  -webkit-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -o-transform: skewY(-6deg);
+  transform-origin: top left; /**/
+}
+
+/* start codepen*/
+
+.landing .container .text:hover h1 {
+  animation: landingMoveRight 2s ease-in 0.3s;
+  -webkit-animation: landingMoveRight 2s ease-in 0.3s;
+}
+
+.landing .container .text:hover p {
+  animation: landingMoveLeft 2s ease-in 0.3s;
+  -webkit-animation: landingMoveLeft 2s ease-in 0.3s;
+}
+
+/*End codepen*/
+
+/*End Landing Rules*/
+
+/*Start Articles Rules*/
+
+.articles .container .article:hover .more > i {
+  animation: article-arrow-move-left 0.6s linear infinite;
+  -webkit-animation: article-arrow-move-left 0.6s linear infinite;
+}
+
+/*End Articles Rules*/
+
+/*Start Gallery Rules*/
+
+/*End Gallery Rules*/
+
+/* <!-- Start Features --> */
+
+/* <!-- End Features --> */
+
+/* <!-- Start TESTIMONIALS --> */
+
+.testimonials .container .card > img {
+  right: calc(100% - 100px);
+}
+
+/* <!-- End TESTIMONIALS --> */
+
+/* <!-- Start TEAM MEMBERS --> */
+
+.team-members .container .member .info {
+  padding-right: 80px;
+}
+
+/* <!-- End TEAM MEMBERS --> */
+
+/* <!-- Start Services --> */
+
+.services .container .service .service-info {
+  text-align: left;
+}
+
+.services .container .service .service-info::before {
+  left: calc(100% - 80px);
+}
+
+.services .container .service .service-info::after {
+  left: calc(100% - 115px);
+}
+
+/* <!-- End Services --> */
+
+/* <!-- Start Our Skills --> */
+
+.our-skills .container .skills .skill .prog-holder .prog {
+  right: 0;
+}
+
+/* <!-- End Our Skills --> */
+
+/* <!-- Start HOW IT WORKS ? --> */
+
+.how-it-works .container > img {
+  margin-left: 100px;
+}
+
+.how-it-works .container .works-steps .works-step > img {
+  margin-left: 30px;
+}
+
+/* <!-- End HOW IT WORKS ? --> */
+
+/* <!-- Start LATEST EVENTS ? --> */
+
+/* <!-- End LATEST EVENTS ? --> */
+
+/* <!-- Start Pricing Plans  --> */
+
+.pricing-plans .container .plan.popular .label {
+  right: calc(100% - 60px);
+}
+
+.pricing-plans .container .plan .plan-features {
+  text-align: right;
+}
+
+.pricing-plans .container .plan .plan-features > li {
+  margin-right: 20px;
+}
+
+.pricing-plans .container .plan .plan-features > li:before {
+  position: absolute;
+  right: 0;
+}
+
+/* <!-- End Pricing Plans  --> */
+
+/* <!-- Start Top Videos  --> */
+
+/* <!-- End Top Videos  --> */
+
+/* <!-- Start Stats  --> */
+
+/* <!-- End Stats  --> */
+
+/* <!-- Start Request Discount  --> */
+
+/* <!-- End Request Discount  --> */
+
+/* <!-- Start  Footer  --> */
+
+.footer .container .links > li:hover {
+  padding-right: 10px;
+}
+
+.footer .container .links > li > a {
+  position: relative;
+}
+
+.footer .container .links > li > a::before {
+  content: "\F100";
+  position: absolute;
+  right: -20px;
+  margin: 0;
+}
+
+.footer .container .contact {
+  color: #b9b9b9;
+  text-align: right;
+}
+
+.footer .container .contact .line > i {
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer .container .contact .line > i {
+    margin-left: 0;
+  }
+}
+/* <!-- End  Footer  --> */
+
+/* Start animation */
+
+/* main title */
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+/* articles */
+@keyframes article-arrow-move-left {
+  100% {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+  }
+}
+
+/* End animation */
